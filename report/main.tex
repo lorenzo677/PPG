@@ -60,16 +60,30 @@
 				A plate PPG has been removed manually because the quality threshold was not sufficeint to discriminate this particular PPG.
 				
 				\colorbox{red}{come sono presentati i dati}
+				
+		
+			
 		\section{Convolutional Variational Auto-Encoders}
 			\label{vae_intro}
 			\emph{Convolutional Variational Auto-Encorders} (CVAE) is an architecture of \emph{Deep Neural Network} (DNN). It can be used with different purposes, but in this project it has been used to perform an  \emph{unsupervised clustering}. This means that from the data we would like to divide them in clusters depending on the age of the patients, without providing the corresponding labels during the training phase of the Neural Network. 
-			We can represent a CVAE using the scheme in Figure \ref{fig:vaebasic}. The data are provided to the input layer in the form of tensor, with a shape eqaul to (number of inputs, input height, input width, number of channel). That pass them to the \emph{encoder} that perform several convolution operations depending on the dimension of the input data. A convolutional layer can be described as a 
+			
+			
 			\begin{figure}[h!] 
 				\centering
 				\includegraphics[width=1\linewidth]{images/VAE_Basic}
 				\caption{In the structure of a CVAE, it is possible to distinguish the \emph{encoder}, that is composed by a Convolutional Network, the \emph{ latent space}, and the \emph{decoder}, that provide us the Neural Network output.}
 				\label{fig:vaebasic}
 			\end{figure}
+			We can represent a CVAE using the scheme in Figure \ref{fig:vaebasic}. The data are provided to the input layer in the form of tensor, with a shape eqaul to (number of inputs, input height, input width, number of channel). That pass them to the \emph{encoder} that perform several convolution operations depending on the dimension of the input data. A convolutional layer apply a convolution on the input and pass the result to the next layer. If the input of a convolutional layer are images,so if we consider a bi-dimensional input, the operation of convolution consist in bring together the information of a small number of pixel in an unique pixel. The pixel on which the convolution is performed, is determined by the \emph{kernel matrix}. Usually the \emph{kernel} is a square matrix with an odd-number of pixel per side. All the pixel in the original image are convoluted, with a \emph{kernel matrix} in a new single pixel. Once the boundary condition and the \emph{stride} \footnote{The stride parameter fixes how often we have to perform a convolution with the \emph{kernel matrix} respect to the length of the image. if the stride is 1, than the I repeat the convolution moving the source matrix of 1 pixel every time, if it is 2, i move the source matrix of two pixel} are fixed, the process must be repeated for all the the pixel of the original image. An example can be seen in the Figure \ref{fig:kernel}. 
+		
+				
+			\begin{figure*}[h!]
+				\centering
+				\includegraphics[width=0.7\linewidth]{images/kernel}
+				\caption{Example of how a \emph{kernel} matrix convolution works. The source matrix is convoluted with the kernel matrix. This lead to a number, that become the output value of a pixel}
+				\label{fig:kernel}
+			\end{figure*}
+			
 		\newpage
 		
 		\printbibliography
