@@ -73,16 +73,34 @@
 				\caption{Structure of a VAE. It is possible to distinguish the \emph{encoder} that, in the particular case of a CVAE, performs convolution operations, the \emph{ latent space}, in which the important information should be contained, and the \emph{decoder}, that try to reconstruct the output starting from the latent space and provide us the Neural Network output.}
 				\label{fig:vaebasic}
 			\end{figure}
-			A \emph{Variational Auto-Encoders} (VAE) can be represented by the scheme in Figure \ref{fig:vaebasic}, where we can see that it is composed by several \emph{layers}. The data are provided to the input layer in the form of tensor, with a shape eqaul to (number of inputs, input height, input width, number of channel). This initial layer pass the data to the \emph{encoder}. The \emph{encoder} reduce the original information to simple distributions that should contain the same information of the original data (\emph{latent space}). Then a decoder is applied to the \emph{latent space} in order to reconstruct an output as much as similar to the input data.
+			A \emph{Variational Auto-Encoders} (VAE) can be represented by the scheme in Figure \ref{fig:vaebasic}, where we can see that it is composed by several \emph{layers}. The data are provided to the input layer in the form of tensor, with a shape equal to (number of inputs, input height, input width, number of channel). This initial layer pass the data to the \emph{encoder}. The \emph{encoder} reduce the original information to simple distributions that should contain the same information of the original data (\emph{latent space}). Then a decoder is applied to the \emph{latent space} in order to reconstruct an output as much as similar to the input data.
 			
-			A CVAE  is a VAE in which, the encoder consist in perform convolution operations. A convolutional layer applies convolutions on the input and pass the result to the next layer. If the input of a convolutional layer are images,so if we consider a bi-dimensional input, the operation of convolution consist in bring together the information of a small number of pixel in an unique pixel. The pixel on which the convolution is performed, is determined by the \emph{kernel matrix}. Usually the \emph{kernel} is a square matrix with an odd-number of pixel per side. All the pixel in the original image are convoluted, with a \emph{kernel matrix} in a new single pixel. Once the boundary condition (\emph{padding}) and the \emph{stride} \footnote{The stride parameter fixes how often we have to perform a convolution with the \emph{kernel matrix} respect to the length of the image. if the stride is 1, than the I repeat the convolution moving the source matrix of 1 pixel every time, if it is 2, I move the source matrix of two pixel, \dots} are fixed, the process must be repeated for every pixel of the original image. An example can be seen in the Figure \ref{fig:kernel}. The \emph{encoder}, encodes the original image in a Gaussian distribution, so its output is a vector, containing the mean and the variance of the distribution. So with a bi-dimensional input, we would have a latent space composed by two vectors of this type, one for each dimension. 
-		
-				
-			\begin{figure*}[h!]
+			A CVAE  is a VAE in which, the encoder consist in perform convolution operations. A convolutional layer applies convolutions on the input and pass the result to the next layer. If the input of a convolutional layer are images,so if we consider a bi-dimensional input, the operation of convolution consist in bring together the information of a small number of pixel in an unique pixel. The pixel on which the convolution is performed, is determined by the \emph{kernel matrix}. Usually the \emph{kernel} is a square matrix with an odd-number of pixel per side. All the pixel in the original image are convoluted, with a \emph{kernel matrix} in a new single pixel. Once the boundary condition (\emph{padding}) and the \emph{stride} \footnote{The \emph{stride} parameter fixes how often we have to perform a convolution with the \emph{kernel matrix} respect to the length of the image. if the stride is 1, than the I repeat the convolution moving the source matrix of 1 pixel every time, if it is 2, I move the source matrix of two pixel, \dots} are fixed, the process must be repeated for every pixel of the original image. An example can be seen in the Figure \ref{fig:kernel}. 
+			\begin{figure*}[t]
 				\centering
 				\includegraphics[width=0.7\linewidth]{images/kernel}
 				\caption{Example of how a \emph{kernel} matrix convolution works. The source matrix is convoluted with the \emph{kernel} matrix. This lead to a number, that become the output value of a pixel}
 				\label{fig:kernel}
+			\end{figure*}
+			
+			The \emph{encoder}, maps the original image in a multivariate normal distribution, so its output is a vector, containing the mean and the standard deviation of the distribution. So with a bi-dimensional input, we would have a latent space composed by two vectors of this type, one for each dimension.  From the latent space, the VAE randomly samples the distribution, and extracts one point, that is fed to the \emph{decoder}, in order to reconstruct the output. This ensure that small differences in the latent space don't produce big differences as output. The mean and the variance are the learnable parameters. So if an input data point is to be mapped into a variable $z$, after the sapling from the distribution, it must follow: $$z = z_{mean} + \sigma\times\varepsilon$$ where the role of $\varepsilon$ will be seen in the subsection \ref{rep_trick}.
+		
+			\subsection{Loss Function}
+			In the training of a VAE, we try to learn the parameter of a distribution. In order to do that, we use a loss function composed by two terms:
+			\begin{itemize}
+				\item \emph{Reconstruction loss}: that ensures the similarity between the input and the output.
+				\item \emph{Regularization loss}: that helps to create a well-structured latent space and to reduce the overfitting of the training dataset.
+			\end{itemize}
+			For the \emph{reconstruction loss}, the \emph{Binary Crossentropy} was used
+			In the VAE, the \emph{regularization term} is given by the \emph{Kullback-Liebler} (KL), \emph{Divergence}, that measures the distance between two distribution, the Gaussian one and the one of the latent space.
+			\subsection{Reparametrization Trick}
+			\label{rep_trick}
+			The random sampling of the distribution introduce in the system stochasticity  
+			\begin{figure*}[t]
+				\centering
+				\includegraphics[width=0.7\linewidth]{images/reparam-vae-2048x959}
+				\caption{}
+				\label{fig:rep_trick}
 			\end{figure*}
 			
 		\newpage
