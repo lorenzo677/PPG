@@ -6,6 +6,8 @@ from sklearn.model_selection import train_test_split
 import pickle
 import matplotlib.pyplot as plt
 import datetime
+import yaml
+
 #%%
 # =============================================================================
 # CUSTOM SAMPLING LAYER
@@ -28,8 +30,18 @@ class Sampling(tf.keras.layers.Layer):
 # Load pre-saved model
 # =============================================================================
 
+config_file = '/Users/lorenzo/Desktop/PPG/config.yaml'
+
+with open(config_file, 'r') as file:
+    dict = yaml.safe_load(file)
+
+EPOCHS = dict['EPOCHS']
+BATCH_SIZE = dict['BATCH_SIZE']
+BETA = dict['BETA']
+LEARNING_RATE = float(dict['LEARNING_RATE'])
+
 LATENT_DIM = 3
-BETA = 1
+
 
 # different_values_per_sample = np.prod(data.shape[1:])
 # new_model = tf.keras.models.load_model(f'''/Users/lorenzo/Desktop/PPG/Cells_vae_best\
@@ -84,10 +96,9 @@ test = np.expand_dims(test, axis=-1)
 # =============================================================================
 
 
-opt = tf.keras.optimizers.Nadam(1e-4)
+opt = tf.keras.optimizers.Nadam(LEARNING_RATE)
 # set the dimensionality of the latent space to a plane for visualization later
 LATENT_DIM = 3
-BETA = 1
 
 different_values_per_sample = np.prod(data.shape[1:])
 dilat_rates = [2, 4, 8, 16]
@@ -97,8 +108,8 @@ x = datetime.datetime.now()
 # CALLBACKS
 # =============================================================================
 
-# es = tf.keras.callbacks.EarlyStopping(monitor='val_loss', mode='min',
-#                                      verbose=1, patience=16)
+es = tf.keras.callbacks.EarlyStopping(monitor='val_loss', mode='min',
+                                      verbose=1, patience=16)
 
 checkp = tf.keras.callbacks.ModelCheckpoint(
                                             f'''/Users/lorenzo/Desktop/PPG/callbacks/PPG_vae_best_{LATENT_DIM}D_BETA{BETA}.hdf5''',
@@ -186,7 +197,7 @@ wave_vae.compile(loss="MSE", optimizer=opt)  # adding loss for reconstruction er
 
 #%%
 
-history = wave_vae.fit(train, train, epochs=50, batch_size=4096,
+history = wave_vae.fit(train, train, epochs=EPOCHS, batch_size=BATCH_SIZE,
                        validation_data=(validation, validation),
                        callbacks=[checkp, logger])
 
