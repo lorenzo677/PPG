@@ -199,7 +199,7 @@ wave_vae.compile(loss="MSE", optimizer=opt)  # adding loss for reconstruction er
 
 history = wave_vae.fit(train, train, epochs=EPOCHS, batch_size=BATCH_SIZE,
                        validation_data=(validation, validation),
-                       callbacks=[checkp, logger])
+                       callbacks=[checkp, logger, es])
 
 #%%
 def plot_label_clusters(data, labels, plot_type):
@@ -228,7 +228,8 @@ def plot_label_clusters(data, labels, plot_type):
     plt.savefig(f'/Users/lorenzo/Desktop/PPG/images/0_vs_2_{plot_type}.png')
     plt.show()
 
-
+# %%
+wave_vae.load_weights( f'/Users/lorenzo/Desktop/PPG/callbacks/PPG_vae_best_{LATENT_DIM}D_BETA{BETA}.hdf5')
 # %%
 plot_label_clusters(test, test_bpm_labels, 'bpm')
 
