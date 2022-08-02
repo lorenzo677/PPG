@@ -40,7 +40,8 @@ BATCH_SIZE = dict['BATCH_SIZE']
 BETA = dict['BETA']
 LEARNING_RATE = float(dict['LEARNING_RATE'])
 
-LATENT_DIM = 3
+# set the dimensionality of the latent space to a plane for visualization later
+LATENT_DIM = 2
 
 
 # different_values_per_sample = np.prod(data.shape[1:])
@@ -97,8 +98,6 @@ test = np.expand_dims(test, axis=-1)
 
 
 opt = tf.keras.optimizers.Nadam(LEARNING_RATE)
-# set the dimensionality of the latent space to a plane for visualization later
-LATENT_DIM = 3
 
 different_values_per_sample = np.prod(data.shape[1:])
 dilat_rates = [2, 4, 8, 16]
@@ -205,7 +204,7 @@ history = wave_vae.fit(train, train, epochs=EPOCHS, batch_size=BATCH_SIZE,
                        callbacks=[checkp, logger, es])
 
 #%%
-def plot_label_clusters(data, labels, plot_type):
+def plot_clusters_3D(data, labels, plot_type):
     # display a 2D plot of the digit classes in the latent space
     z_mean, _, _ = encoder.predict(data)
     #plt.figure(figsize=(12, 10))
@@ -228,16 +227,33 @@ def plot_label_clusters(data, labels, plot_type):
     plt.title(f'0 vs 2 {plot_type}')
     plt.xlabel("z[0]")
     plt.ylabel("z[2]")
-    plt.savefig(f'/Users/lorenzo/Desktop/PPG/images/0_vs_2_{plot_type}.png')
+    plt.savefig(f'/Users/lorenzo/Desktop/PPG/images/3D_0_vs_2_{plot_type}.png')
     plt.show()
 
+def plot_clusters_2D(data, labels, plot_type):
+    # display a 2D plot of the digit classes in the latent space
+    z_mean, _, _ = encoder.predict(data)
+    #plt.figure(figsize=(12, 10))
+    plt.title(f'0 vs 1 {plot_type}')
+    plt.scatter(z_mean[:, 0], z_mean[:, 1], s=2, alpha=0.7, c=labels, cmap='rainbow')
+    plt.colorbar()
+    plt.xlabel("z[0]")
+    plt.ylabel("z[1]")
+    plt.savefig(f'/Users/lorenzo/Desktop/PPG/images/2D_0_vs_1_{plot_type}.png')
+    plt.show()
 # %%
 wave_vae.load_weights( f'/Users/lorenzo/Desktop/PPG/callbacks/PPG_vae_best_{LATENT_DIM}D_BETA{BETA}.hdf5')
 # %%
-plot_label_clusters(test, test_bpm_labels, 'bpm')
+if LATENT_DIM == 3:
+    plot_clusters_3D(test, test_bpm_labels, 'bpm')
+else:
+    plot_clusters_2D(test, test_bpm_labels, 'bpm')
 
 #%%
-plot_label_clusters(test, test_age_labels, 'age')
+if LATENT_DIM == 3:
+    plot_clusters_3D(test, test_age_labels, 'age')
+else:
+    plot_clusters_2D(test, test_age_labels, 'age')
 # %%
 
 quantile1 = np.quantile(test_age_labels, 1/3)
@@ -255,6 +271,9 @@ for el in idx:
     new_test_data.append(test[el])
     new_test_label.append(test_age_labels[el])
 new_test_data=np.array(new_test_data)
-plot_label_clusters(new_test_data, new_test_label, 'age')
+if LATENT_DIM == 3:
+    plot_clusters_3D(new_test_data, new_test_label, 'age')
+else:
+    plot_clusters_2D(new_test_data, new_test_label, 'age')
 
 # %%
