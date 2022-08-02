@@ -68,7 +68,7 @@ LATENT_DIM = 3
 # nns = fnn.predict(data)
 
 #%%
-with open('/Users/lorenzo/Desktop/PPG/db_ppg_peaks.pickle', 'rb') as file:
+with open('/Users/lorenzo/Desktop/PPG/db_ppg_peaks_filtered.pickle', 'rb') as file:
     df = pickle.load(file)
 #print(df)
 
@@ -167,8 +167,11 @@ mid = tf.keras.layers.Conv1DTranspose(filters=16, kernel_size=3,
                                       padding='same', activation='elu')(mid)
 
 for i in dilat_rates[::-1]:
-    mid = tf.keras.layers.Conv1DTranspose(filters=16, kernel_size=3, dilation_rate=i,
-                                          padding='same', activation='elu')(mid)
+     mid = tf.keras.layers.Conv1DTranspose(filters=4, kernel_size=5, dilation_rate=1,
+                                           padding='same', activation='elu')(mid)
+# for i in dilat_rates[::-1]:
+#     mid = tf.keras.layers.Conv1DTranspose(filters=16, kernel_size=3, dilation_rate=i,
+#                                           padding='same', activation='elu')(mid)
 mid = tf.keras.layers.Conv1DTranspose(filters=8, kernel_size=3,
                                       padding='same', activation='elu')(mid)
 
@@ -237,8 +240,8 @@ plot_label_clusters(test, test_bpm_labels, 'bpm')
 plot_label_clusters(test, test_age_labels, 'age')
 # %%
 
-quantile1 = np.quantile(test_age_labels, 0.33)
-quantile2 = np.quantile(test_age_labels, 0.66)
+quantile1 = np.quantile(test_age_labels, 1/3)
+quantile2 = np.quantile(test_age_labels, 2/3)
 
 idx =[]
 test_age_labels = test_age_labels.reset_index(drop=True)
