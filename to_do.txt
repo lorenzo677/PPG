@@ -1,7 +1,0 @@
-- Vedrificare che la macchina nn stia imparando il bpm (fare il plot colorando in base al bpm e nn all'eta)
-
-V  Aumentare il learning rate
-- (+grande batch size, + veloce, piu piccolo meglio è)
-- gioca con l'ottimizzazione (beta, mae)
-V imparare a salvare/leggere file (callbacks)
-
