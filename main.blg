@@ -1,0 +1,17 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[52] biber-darwin:340> INFO - === Mon Oct 24, 2022, 18:41:55
+[63] Biber.pm:415> INFO - Reading 'main.bcf'
+[129] Biber.pm:952> INFO - Found 16 citekeys in bib section 0
+[141] Biber.pm:4340> INFO - Processing section 0
+[149] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[150] bibtex.pm:1689> INFO - LaTeX decoding ...
+[165] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliografia.bib'
+[260] Utils.pm:395> WARN - ISBN '2045-2322' in entry 'ppg_cycle' is invalid - run biber with '--validate_datamodel' for details.
+[282] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[282] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[282] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[283] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[294] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[308] bbl.pm:757> INFO - Output to main.bbl
+[308] Biber.pm:128> INFO - WARNINGS: 1

@@ -1,0 +1,714 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{MBA}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{MacBook Air M1}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.apple.com/it/macbook-air-m1/specs/
+      \endverb
+      \verb{url}
+      \verb https://www.apple.com/it/macbook-air-m1/specs/
+      \endverb
+    \endentry
+    \entry{miniforge-doc}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Miniforge Repository on GitHub}
+      \verb{urlraw}
+      \verb https://github.com/conda-forge/miniforge
+      \endverb
+      \verb{url}
+      \verb https://github.com/conda-forge/miniforge
+      \endverb
+    \endentry
+    \entry{tensorflow2015-whitepaper}{misc}{}
+      \name{author}{40}{}{%
+        {{hash=396d6419316ec52f4c63b2f85912b61b}{%
+           family={Martín\bibnamedelima Abadi},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f337a7c116835c22bb206d2f0d7c70e0}{%
+           family={Ashish\bibnamedelima Agarwal},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=84ac9fcb6c15dcd79c092bc8e20586ba}{%
+           family={Paul\bibnamedelima Barham},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d8574748e3086e0b279a58cdba71763d}{%
+           family={Eugene\bibnamedelima Brevdo},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=c0b56f741b5a5bddfe77f1881c3cc67a}{%
+           family={Zhifeng\bibnamedelima Chen},
+           familyi={Z\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8b8dd2e01366c855f42e47027cf23e98}{%
+           family={Craig\bibnamedelima Citro},
+           familyi={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=978a7d9601bf09e03d1bb3f6cce7a0ce}{%
+           family={Greg\bibnamedelima S.\bibnamedelimi Corrado},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3b500b0dfd88e6e151d29108fdcb82f0}{%
+           family={Andy\bibnamedelima Davis},
+           familyi={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=2fd376ea3b3a3da11704c0ee86753dcf}{%
+           family={Jeffrey\bibnamedelima Dean},
+           familyi={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5b34e641dd8a00f97c6242ae0353eb90}{%
+           family={Matthieu\bibnamedelima Devin},
+           familyi={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5b4490947d4e91359646ce3c93cbd2f7}{%
+           family={Sanjay\bibnamedelima Ghemawat},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1fdef10b94ee122ef6136197f99e3df3}{%
+           family={Ian\bibnamedelima Goodfellow},
+           familyi={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=166ae8a0b435eded68e39e9e2d2a1ee8}{%
+           family={Andrew\bibnamedelima Harp},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7e9f7006151cf312bc133568336c68c6}{%
+           family={Geoffrey\bibnamedelima Irving},
+           familyi={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=08c1890e1c33279b8c63c71fa8f19263}{%
+           family={Michael\bibnamedelima Isard},
+           familyi={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=9fce03efe6b3331a1b93ed2e7c0da9d5}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Yangqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c0c0eea5379268c0c5b68732c90984b6}{%
+           family={Rafal\bibnamedelima Jozefowicz},
+           familyi={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=cff46cb4603a73d83b11ea7a9ded9d79}{%
+           family={Lukasz\bibnamedelima Kaiser},
+           familyi={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=d088e0f635523b8b5b18662331e4f44a}{%
+           family={Manjunath\bibnamedelima Kudlur},
+           familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1c24291ae15b979c82aa09a33790cb62}{%
+           family={Josh\bibnamedelima Levenberg},
+           familyi={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=796a3a98ff7545fe10f6a4c17ba016fa}{%
+           family={Dandelion\bibnamedelima Mané},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1ee98d232eb1fc1208a8f8ca649e970b}{%
+           family={Rajat\bibnamedelima Monga},
+           familyi={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b2a15ec3d90955ece50ea26d31100b9a}{%
+           family={Sherry\bibnamedelima Moore},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1494c573fadad736c58cf1119ac59239}{%
+           family={Derek\bibnamedelima Murray},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ecf58eb1684af6cba2c1f126405eedab}{%
+           family={Chris\bibnamedelima Olah},
+           familyi={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=9f43befd94cd09a9aaa7ea8489405a83}{%
+           family={Mike\bibnamedelima Schuster},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4712800a228b1179529b9f6e0d1b1838}{%
+           family={Jonathon\bibnamedelima Shlens},
+           familyi={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=41ad6ff6c026d5a3730269072b31caf1}{%
+           family={Benoit\bibnamedelima Steiner},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b02f7871db6fc5524cec4ce38e104410}{%
+           family={Ilya\bibnamedelima Sutskever},
+           familyi={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=63288446e47b1d383f522ede84aa6fcc}{%
+           family={Kunal\bibnamedelima Talwar},
+           familyi={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=1dec75595b55bf77971f6a932d146b81}{%
+           family={Paul\bibnamedelima Tucker},
+           familyi={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b6680dbb0176cb9bd87a3b26fa6f5cfb}{%
+           family={Vincent\bibnamedelima Vanhoucke},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e030c9d199c66657e26138be29814d81}{%
+           family={Vijay\bibnamedelima Vasudevan},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=04426b798803cfaf3e8aa9280a5d0a58}{%
+           family={Fernanda\bibnamedelima Viégas},
+           familyi={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fa7242e11c7d955de2ac1be94ca29073}{%
+           family={Oriol\bibnamedelima Vinyals},
+           familyi={O\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8c9ee8f70a3c3d97f85efd01c4e9cbe6}{%
+           family={Pete\bibnamedelima Warden},
+           familyi={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=8e4243c228c72a5e5279e31252887b32}{%
+           family={Martin\bibnamedelima Wattenberg},
+           familyi={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c6a6eb2597f23589fc9141bdda275996}{%
+           family={Martin\bibnamedelima Wicke},
+           familyi={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=3ea39e6dc6ef47029ae996c7e63f1a48}{%
+           family={Yuan\bibnamedelima Yu},
+           familyi={Y\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=b69feb3a3d59a312b20dbef0b1d2d6de}{%
+           family={Xiaoqiang\bibnamedelima Zheng},
+           familyi={X\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{fullhash}{9b332dc9b33a2f6316d71d525269bd0f}
+      \strng{bibnamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authorbibnamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authornamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authorfullhash}{9b332dc9b33a2f6316d71d525269bd0f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Software available from tensorflow.org}
+      \field{title}{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{Matsumura2015}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=d5024f18d3dfff21e93f2ca2afb13fd2}{%
+           family={Matsumura},
+           familyi={M\bibinitperiod},
+           given={Kenta},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9e4264a40b7eb792b089ca49af3f7f77}{%
+           family={Rolfe},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f4acd9628fb26f612b9d10f8d099a4f3}{%
+           family={Yamakoshi},
+           familyi={Y\bibinitperiod},
+           given={Takehiro},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=16ab77c06fd8880935c42e5dff243128}{%
+           family={Rasooly},
+           familyi={R\bibinitperiod},
+           given={Avraham},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dcc6f73451cdf3c37f8734f0e30d6d19}{%
+           family={Herold},
+           familyi={H\bibinitperiod},
+           given={Keith\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{2e1975975df7c88c03b860356b80968b}
+      \strng{fullhash}{2e1975975df7c88c03b860356b80968b}
+      \strng{bibnamehash}{2e1975975df7c88c03b860356b80968b}
+      \strng{authorbibnamehash}{2e1975975df7c88c03b860356b80968b}
+      \strng{authornamehash}{2e1975975df7c88c03b860356b80968b}
+      \strng{authorfullhash}{2e1975975df7c88c03b860356b80968b}
+      \strng{editorbibnamehash}{e2d11b041246c39ae752c9edcb3d13fe}
+      \strng{editornamehash}{e2d11b041246c39ae752c9edcb3d13fe}
+      \strng{editorfullhash}{e2d11b041246c39ae752c9edcb3d13fe}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{iPhysioMeter is a new smartphone application ("App") for the Apple iPhone and iPod touch that allows photoplethysmography (PPG) to be implemented without the need for any additional devices. The resulting signal, the photoplethysmogram, allows the calculation of basic but valuable and frequently used physiological indices such as heart rate (HR) and pulse volume (PV). The design of iPhysioMeter has very much been influenced by a consideration of usability, as is immediately evident from ones first experience with it. However, its apparent simplicity in use should not disguise the need for correct operation, which otherwise might lead to collection of invalid or inaccurate data. There are several unexpected pitfalls that might not only produce inaccurate values, but, under some circumstances, could also damage the device or present a hazard to the user or subject. We therefore describe here, firstly, the core technology that makes it possible to perform PPG and to calculate HR and normalized PV (NPV) from the photoplethysmogram using only a smartphone, secondly, the correct and optimum methods and procedures for using iPhysioMeter that will help to ensure safety and the derivation of valid data under real operational conditions. We hope that these descriptions will help facilitate any activities related to physiological measurement when using only a smartphone.}
+      \field{booktitle}{Mobile Health Technologies: Methods and Protocols}
+      \field{isbn}{978-1-4939-2172-0}
+      \field{title}{iPhysioMeter: A Smartphone Photoplethysmograph for Measuring Various Physiological Indices}
+      \field{year}{2015}
+      \field{pages}{305\bibrangedash 326}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-1-4939-2172-0_21
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-4939-2172-0_21
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-4939-2172-0_21
+      \endverb
+    \endentry
+    \entry{vae_paper}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=53d2880ad8047b61cdae2c6b2803e763}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{fullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{bibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorbibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authornamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorfullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auto-Encoding Variational Bayes}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1312.6114
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1312.6114
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1312.6114
+      \endverb
+      \keyw{Machine Learning (stat.ML),Machine Learning (cs.LG),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{vae_scheme}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a0f0c8ae3f9b81ddb679af2e25af1304}{%
+           family={Nugroho},
+           familyi={N\bibinitperiod},
+           given={Herminarto},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \strng{fullhash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \strng{bibnamehash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \strng{authorbibnamehash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \strng{authornamehash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \strng{authorfullhash}{a0f0c8ae3f9b81ddb679af2e25af1304}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jurnal Ilmu Komputer dan Informasi}
+      \field{month}{03}
+      \field{title}{Fully Convolutional Variational Autoencoder For Feature Extraction Of Fire Detection System}
+      \field{volume}{13}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.21609/jiki.v13i1.761
+      \endverb
+    \endentry
+    \entry{kernel_cov}{article}{}
+      \name{author}{5}{}{%
+        {{hash=14395194948163a63bee248eeb10180e}{%
+           family={Aminu\bibnamedelima Bello},
+           familyi={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Saifullahi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=205d9e8882814039aeb30958c6887533}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Shangshu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f21a8e1746c7e003133037dc9888a372}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a0179260b68c92333d79f8afd9adc03d}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Jibril},
+           giveni={J\bibinitperiod}}}%
+        {{hash=099a58f50432fae0961d03bb2073f8ca}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f800f49bf90f756670ba6af4bdda0b6}
+      \strng{fullhash}{c1b432214d0ff650d970f636a4dd0c4a}
+      \strng{bibnamehash}{5f800f49bf90f756670ba6af4bdda0b6}
+      \strng{authorbibnamehash}{5f800f49bf90f756670ba6af4bdda0b6}
+      \strng{authornamehash}{5f800f49bf90f756670ba6af4bdda0b6}
+      \strng{authorfullhash}{c1b432214d0ff650d970f636a4dd0c4a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Remote Sensing}
+      \field{month}{05}
+      \field{title}{Review: Deep Learning on 3D Point Clouds}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{1729}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/rs12111729
+      \endverb
+    \endentry
+    \entry{8308186}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a92a8d7d47ce475bde1f4d0c575e3415}{%
+           family={Albawi},
+           familyi={A\bibinitperiod},
+           given={Saad},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b0c7df6171cf87ebe4270071829a7d26}{%
+           family={Mohammed},
+           familyi={M\bibinitperiod},
+           given={Tareq\bibnamedelima Abed},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c2f9de2eb7b3ac9408b9e418ef2a1e39}{%
+           family={Al-Zawi},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Saad},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \strng{fullhash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \strng{bibnamehash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \strng{authorbibnamehash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \strng{authornamehash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \strng{authorfullhash}{a7a6dfa5d4d520d174dfaa3acc2c04e0}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Conference on Engineering and Technology (ICET)}
+      \field{title}{Understanding of a convolutional neural network}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICEngTechnol.2017.8308186
+      \endverb
+    \endentry
+    \entry{rep_trick}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d376ecd15da60042b75c35acc608cc86}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0cfed291802276117af5bba0bea1c83a}{%
+           family={Soliman},
+           familyi={S\bibinitperiod},
+           given={Waleed},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a71ad9127be68b8e14145a9bfb1df899}{%
+           family={Nazir},
+           familyi={N\bibinitperiod},
+           given={Amril},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1090f5872e43aae1cdb9936fecfa5a71}{%
+           family={Mohammad},
+           familyi={M\bibinitperiod},
+           given={Shorf},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{19914797ccd49350761732371f1e19e4}
+      \strng{fullhash}{776a17b86f77b0b803882f2e21f37f03}
+      \strng{bibnamehash}{19914797ccd49350761732371f1e19e4}
+      \strng{authorbibnamehash}{19914797ccd49350761732371f1e19e4}
+      \strng{authornamehash}{19914797ccd49350761732371f1e19e4}
+      \strng{authorfullhash}{776a17b86f77b0b803882f2e21f37f03}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{month}{06}
+      \field{title}{Variational Autoencoders and Wasserstein Generative Adversarial Networks for Improving the Anti-Money Laundering Process}
+      \field{volume}{PP}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2021.3086359
+      \endverb
+    \endentry
+    \entry{9244048}{article}{}
+      \name{author}{2}{}{%
+        {{hash=97340df96bec6014ee65c30ac5781c04}{%
+           family={Asperti},
+           familyi={A\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=15184929d9df5cc2f38e1de2b75d8d0e}{%
+           family={Trentin},
+           familyi={T\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \strng{fullhash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \strng{bibnamehash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \strng{authorbibnamehash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \strng{authornamehash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \strng{authorfullhash}{13d000bcd33552087bb6d0d0fbba1f49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Balancing Reconstruction Error and Kullback-Leibler Divergence in Variational Autoencoders}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{199440\bibrangedash 199448}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3034828
+      \endverb
+    \endentry
+    \entry{KL}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=0a8d8124df98c73841d22ddaaf399c92}{%
+           family={Joyce},
+           familyi={J\bibinitperiod},
+           given={James\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c3c40780eeb0a8ca912ccd7d29918eb8}{%
+           family={Lovric},
+           familyi={L\bibinitperiod},
+           given={Miodrag},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{fullhash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{bibnamehash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{authorbibnamehash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{authornamehash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{authorfullhash}{0a8d8124df98c73841d22ddaaf399c92}
+      \strng{editorbibnamehash}{c3c40780eeb0a8ca912ccd7d29918eb8}
+      \strng{editornamehash}{c3c40780eeb0a8ca912ccd7d29918eb8}
+      \strng{editorfullhash}{c3c40780eeb0a8ca912ccd7d29918eb8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Encyclopedia of Statistical Science}
+      \field{isbn}{978-3-642-04898-2}
+      \field{title}{Kullback-Leibler Divergence}
+      \field{year}{2011}
+      \field{pages}{720\bibrangedash 722}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04898-2_327
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-642-04898-2_327
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-642-04898-2_327
+      \endverb
+    \endentry
+    \entry{database}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Monitor your heart rhythm using only a smartphone}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://www.happitech.com
+      \endverb
+      \verb{url}
+      \verb http://www.happitech.com
+      \endverb
+    \endentry
+    \entry{cardiac_cycle}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b6082bb5efff73da37e087e471a903c0}{%
+           family={Klabunde},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6082bb5efff73da37e087e471a903c0}
+      \strng{fullhash}{b6082bb5efff73da37e087e471a903c0}
+      \strng{bibnamehash}{b6082bb5efff73da37e087e471a903c0}
+      \strng{authorbibnamehash}{b6082bb5efff73da37e087e471a903c0}
+      \strng{authornamehash}{b6082bb5efff73da37e087e471a903c0}
+      \strng{authorfullhash}{b6082bb5efff73da37e087e471a903c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cardiovascular Physiology Concepts}
+      \field{year}{2012}
+      \field{dateera}{ce}
+    \endentry
+    \entry{ppg_cycle}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9a6d31a33de78c07d9dd866dff5c05b6}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Hangsik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3e98d1faefd5831b7d525d8169cfcf25}{%
+           family={Noh},
+           familyi={N\bibinitperiod},
+           given={Gyujeong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4dc8402ead734e5e574aa5aaf03e0517}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Byung-Moon},
+           giveni={B\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \strng{fullhash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \strng{bibnamehash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \strng{authorbibnamehash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \strng{authornamehash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \strng{authorfullhash}{7c7bcf3bcc73b3df0f90e793386f252c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Arterial stiffness due to vascular aging is a major indicator during the assessment of cardiovascular risk. In this study, we propose a method for age estimation by applying deep learning to a photoplethysmogram (PPG) for the non-invasive assessment of the vascular age. The proposed deep learning-based age estimation model consists of three convolutional layers and two fully connected layers, and was developed as an explainable artificial intelligence model with Grad-Cam to explain the contribution of the PPG waveform characteristic to vascular age estimation. The deep learning model was developed using a segmented PPG by pulse from a total of 752 adults aged 20--89 years, and the performance was quantitatively evaluated using the mean absolute error, root-mean-squared-error, Pearson's correlation coefficient, and coefficient of determination between the actual and estimated ages. As a result, a mean absolute error of 8.1 years, root mean squared error of 10.0 years, correlation coefficient of 0.61, and coefficient of determination of 0.37, were obtained. A Grad-Cam, used to determine the weight that the input signal contributes to the result, was employed to verify the contribution to the age estimation of the PPG segment, which was high around the systolic peak. The results of this study suggest that a convolutional-neural-network-based explainable artificial intelligence model outperforms existing models without an additional feature detection process. Moreover, it can provide a rationale for PPG-based vascular aging assessment.}
+      \field{isbn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Photoplethysmogram based vascular aging assessment using the deep convolutional neural network}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{11377}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-022-15240-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41598-022-15240-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41598-022-15240-4
+      \endverb
+    \endentry
+    \entry{dicrotic-notch}{article}{}
+      \name{author}{6}{}{%
+        {{hash=407c5a2a5c558481236131480f6e8312}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1dfdd072cac2731d13f56f335cdc2a83}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Sijung},
+           giveni={S\bibinitperiod}}}%
+        {{hash=280dc4c18f682e47f79d502f0e89f614}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e4829c2b1031e349e31cc560ede5eafe}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4c3ac8d72449cb4223e50d7a0eb21921}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Yihong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2d0a226573f528f6d5130f0ed7b86409}{%
+           family={Cheang},
+           familyi={C\bibinitperiod},
+           given={Peck},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9000f7dad36ac16f5598147a76b1e604}
+      \strng{fullhash}{c1bb4bc130d19fc76f53cfac500810af}
+      \strng{bibnamehash}{9000f7dad36ac16f5598147a76b1e604}
+      \strng{authorbibnamehash}{9000f7dad36ac16f5598147a76b1e604}
+      \strng{authornamehash}{9000f7dad36ac16f5598147a76b1e604}
+      \strng{authorfullhash}{c1bb4bc130d19fc76f53cfac500810af}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of medical engineering and technology}
+      \field{month}{11}
+      \field{title}{Insight into the dicrotic notch in photoplethysmographic pulses from the finger tip of young adults}
+      \field{volume}{33}
+      \field{year}{2009}
+      \field{pages}{628\bibrangedash 33}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.3109/03091900903150980
+      \endverb
+    \endentry
+    \entry{review}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0a0893bb0341fa2ef9c88ef82d3d4d0b}{%
+           family={Ghamari},
+           familyi={G\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49d762afdb83c633968473a6e39ba06a}{%
+           family={Nazeran},
+           familyi={N\bibinitperiod},
+           given={Homayoun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a5737cff20b0fb4d034869bf210188ef}{%
+           family={Soltanpur},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9462bb28c408665ac46f762816474d2b}
+      \strng{fullhash}{9462bb28c408665ac46f762816474d2b}
+      \strng{bibnamehash}{9462bb28c408665ac46f762816474d2b}
+      \strng{authorbibnamehash}{9462bb28c408665ac46f762816474d2b}
+      \strng{authornamehash}{9462bb28c408665ac46f762816474d2b}
+      \strng{authorfullhash}{9462bb28c408665ac46f762816474d2b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{A review on wearable photoplethysmography sensors and their potential future applications in health care}
+      \field{volume}{4}
+      \field{year}{2018}
+      \field{pages}{195\bibrangedash 202}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.15406/ijbsbe.2018.04.00125
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
